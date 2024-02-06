@@ -15,14 +15,14 @@ namespace Library.Controllers
             _service= new CategoryService();
         }
 
-        [HttpPost("add-category")]
+        [HttpPost("add-category/{i}")]
 
-        public int AddCategory([FromBody]AddCategoryDto dto)
+        public int AddCategory([FromRoute]int i,[FromBody]AddCategoryDto dto)
         {
-            return _service.AddCategory(dto);
+            return _service.AddCategory(i,dto);
         }
-        [HttpGet("serch-Book")]
-        public List<Book> SerchBook([FromRoute]string serche)
+        [HttpGet("serch-Book/{serche}")]
+        public Book SerchBook([FromRoute]string serche)
         {
             return _service.SerchCategory(serche);
         }

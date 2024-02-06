@@ -17,20 +17,20 @@ namespace Library.Controllers
 
         }
 
-        [HttpPost("Add-Book/{i}")]
+        [HttpPost("Add-Book")]
 
-        public int AddBook([FromRoute] int i,[FromBody] AddBookDto dto)
+        public int AddBook([FromBody] AddBookDto dto)
         {
-            return _service.AddBook(i,dto);
+            return _service.AddBook(dto);
 
         }
         [HttpGet("Get-book")]
-       public List<Book> GetBooks()
+       public List<GetBooksDto> GetBooks()
         {
             return _service.GetBook();
         }
-        [HttpDelete("delete-Book")]
-        public void Deletebook([FromQuery] int i)
+        [HttpDelete("delete-Book/{i}")]
+        public void Deletebook([FromRoute] int i)
         {
             _service.DeletBook(i);
         }

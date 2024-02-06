@@ -3342,19 +3342,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amirv\\.nuget\\packages\\": {}
+    "C:\\Users\\welldone\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\alireza.code\\EX.Library\\Library\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "E:\\alireza.code\\EX.Library\\Library\\Library\\Library.csproj",
-      "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-      "outputPath": "E:\\alireza.code\\EX.Library\\Library\\Library\\obj\\",
+      "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Library\\Library.csproj",
+      "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3362,7 +3362,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3419,7 +3418,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

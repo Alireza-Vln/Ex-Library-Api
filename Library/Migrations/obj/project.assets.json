@@ -3265,19 +3265,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amirv\\.nuget\\packages\\": {}
+    "C:\\Users\\welldone\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\alireza.code\\EX.Library\\Library\\Migrations\\Migrations.csproj",
+      "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj",
       "projectName": "Migrations",
-      "projectPath": "E:\\alireza.code\\EX.Library\\Library\\Migrations\\Migrations.csproj",
-      "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-      "outputPath": "E:\\alireza.code\\EX.Library\\Library\\Migrations\\obj\\",
+      "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj",
+      "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Migrations\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3328,7 +3328,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

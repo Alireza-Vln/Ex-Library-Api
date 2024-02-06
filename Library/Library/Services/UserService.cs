@@ -16,18 +16,45 @@ namespace Library.Services
             var user = new User
             {
                 Name = dto.Name,
+
             };
             _context.Users.Add(user);
             _context.SaveChanges();
-            return user.Id; 
+            return user.Id;
+            
         }
-        public void RentBook(string user,string book)
+        public void RentBook(int BookId,int UserId)
         {
-            var buy = _context.Books.Where(_ => _.Name == book && _.User.Name == user).FirstOrDefault();
-            buy.Count--;
-            buy.RentBook++;
-            buy.User.BookCount++;
+            var buybook = _context.Books.FirstOrDefault(_ => _.Id == BookId);
+            var userbook=_context.Users.FirstOrDefault(_ => _.Id == UserId);
+            buybook.UserId = UserId;
+            buybook.Count--;
+            buybook.RentBook++;
+           userbook.BookCount++;
             _context.SaveChanges();
+        }
+        public List<GetUserDto> GetUsers()
+        {
+           return( from us in _context.Set<User>()
+            join bo in _context.Books
+            on us.Id equals bo.UserId
+            into temp
+            from bo in temp.DefaultIfEmpty()
+
+            select new GetUserDto
+            {
+                UserName = us.Name,
+                BookName =bo.Name,
+                CountBook=us.BookCount,
+
+            }).ToList();
+        }
+        public void DeleteUser(int i)
+        {
+            var user = _context.Users.Where(_=> _.Id == i).FirstOrDefault();
+            _context.Users.Remove(user);
+            _context.SaveChanges();
+
         }
     }
 }

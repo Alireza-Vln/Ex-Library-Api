@@ -11,23 +11,30 @@ namespace Library.Services
         {
             _context= new EfDataContext();
         }
-        public int AddCategory(AddCategoryDto dto)
+        public int AddCategory(int i,AddCategoryDto dto)
         {
-
+            var book=_context.Books.FirstOrDefault(_=> _.Id == i);
             var category = new Category()
             {
                 Name = dto.Name,
-
+                BookId=book.Id,
             };
             _context.Categories.Add(category);  
             _context.SaveChanges();
             return category.Id;
         }
-        public List<Book>SerchCategory(string Serch)
+        public Book SerchCategory(string Serch)
         {
-            var book = _context.Books.Where(_ => _.Name.Contains(Serch));
-            return book.ToList();
+            var book = _context.Books.Where(_ => _.Name.Contains(Serch)).First();
+            return book;
           
+        }
+        public void DeleteUser(int i)
+        {
+            var category = _context.Categories.Where(_ => _.Id == i).FirstOrDefault();
+            _context.Categories.Remove(category);
+            _context.SaveChanges();
+
         }
     }
 

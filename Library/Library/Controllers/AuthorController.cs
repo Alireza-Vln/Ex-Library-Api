@@ -25,11 +25,11 @@ namespace Library.Controllers
 
         }
         [HttpGet("Get-Author")]
-        public DbSet<Author> GetAuthors()
+        public List<GetAothorDto> GetAuthors()
         {
-            return _service.GetAuthors();
+            return _service.GetAuthor();
         }
-        [HttpDelete("delete-Author")]
+        [HttpDelete("delete-Author/{i}")]
         public void DeleteAuthor([FromRoute]int i)
         {
             _service.DeletAuthor(i);

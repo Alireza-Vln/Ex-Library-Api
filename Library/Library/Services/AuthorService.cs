@@ -14,20 +14,32 @@ namespace Library.Services
         }
         public int AddAuthor(AddAuthorDto dto)
         {
-          
+
             var author = new Author
             {
-                Name = dto.Name
+                Name = dto.Name,
+                
             };
+           
 
             _context.Authors.Add(author);
             _context.SaveChanges();
-
             return author.Id;
         }
-        public DbSet<Author> GetAuthors()
+
+        public List<GetAothorDto> GetAuthor()
         {
-            return _context.Authors;
+            return (from at in _context.Set<Author>()
+                    join bo in _context.Books
+                    on at.Id equals bo.UserId
+                    into temp
+                    from bo in temp.DefaultIfEmpty()
+
+                    select new GetAothorDto
+                    {
+                        AuthorName = at.Name,
+                        BookName = bo.Name,
+                    } ).ToList();
         }
         public void DeletAuthor(int id) 
        {
