@@ -28,7 +28,7 @@ namespace Library.Services
             var buybook = _context.Books.FirstOrDefault(_ => _.Id == BookId);
             if (buybook == null)
             {
-                throw new Exception();
+                throw new Exception("Not Found");
             }
             var userbook=_context.Users.FirstOrDefault(_ => _.Id == UserId);
             if (userbook == null)
