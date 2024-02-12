@@ -29,9 +29,13 @@ namespace Library.Services
             return book;
           
         }
-        public void DeleteUser(int i)
+        public void DeleteCategoris(int i)
         {
             var category = _context.Categories.Where(_ => _.Id == i).FirstOrDefault();
+            if (category == null)
+            {
+                throw new Exception();
+            }
             _context.Categories.Remove(category);
             _context.SaveChanges();
 

@@ -52,6 +52,10 @@ namespace Library.Services
         public void DeletBook(int id)
         {
             var delete = _context.Books.Where(_ => _.Id == id).First();
+            if (delete == null)
+            {
+                throw new Exception();
+            }
             _context.Books.Remove(delete);
             _context.SaveChanges();
         }

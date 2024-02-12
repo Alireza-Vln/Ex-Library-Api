@@ -26,5 +26,11 @@ namespace Library.Controllers
         {
             return _service.SerchCategory(serche);
         }
+        [HttpDelete("Delete-Category")]
+
+    public void Delete([FromBody] int i )
+        {
+            _service.DeleteCategoris(i);
+        }
     }
 }

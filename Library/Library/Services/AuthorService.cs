@@ -14,9 +14,11 @@ namespace Library.Services
         }
         public int AddAuthor(AddAuthorDto dto)
         {
+            
 
             var author = new Author
             {
+                
                 Name = dto.Name,
                 
             };
@@ -45,7 +47,12 @@ namespace Library.Services
        {
          
             var delete=_context.Authors.Where(_=>_.Id==id).First();
+            if (delete == null)
+            {
+                throw new Exception();
+            }
             _context.Authors.Remove(delete);
+            _context.SaveChanges();
             
         }
     }
