@@ -26,6 +26,10 @@ namespace Library.Services
         public Book SerchCategory(string Serch)
         {
             var book = _context.Books.Where(_ => _.Name.Contains(Serch)).First();
+            if (book == null)
+            {
+                throw new Exception();
+            }
             return book;
           
         }

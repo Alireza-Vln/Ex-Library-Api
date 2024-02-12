@@ -28,7 +28,7 @@ namespace Library.Services
             var buybook = _context.Books.FirstOrDefault(_ => _.Id == BookId);
             if (buybook == null)
             {
-                throw new Exception("Not Found");
+                throw new Exception();
             }
             var userbook=_context.Users.FirstOrDefault(_ => _.Id == UserId);
             if (userbook == null)
@@ -61,6 +61,10 @@ namespace Library.Services
         public void DeleteUser(int i)
         {
             var user = _context.Users.Where(_=> _.Id == i).FirstOrDefault();
+            if (user == null)
+            {
+                throw new Exception();
+            }
             _context.Users.Remove(user);
             _context.SaveChanges();
 
