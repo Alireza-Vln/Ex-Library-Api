@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj": {}
+    "C:\\Users\\welldone\\Desktop\\Alireza\\tesst-Api\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj": {}
   },
   "projects": {
-    "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\tesst-Api\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\tesst-Api\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj",
         "projectName": "Migrations",
-        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\tesst-Api\\Ex-Library-Api\\Library\\Migrations\\Migrations.csproj",
         "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\New folder (2)\\Ex-Library-Api\\Library\\Migrations\\obj\\",
+        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\tesst-Api\\Ex-Library-Api\\Library\\Migrations\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",

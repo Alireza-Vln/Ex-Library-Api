@@ -26,8 +26,17 @@ namespace Library.Services
         public void RentBook(int BookId,int UserId)
         {
             var buybook = _context.Books.FirstOrDefault(_ => _.Id == BookId);
+            if (buybook == null)
+            {
+                throw new Exception();
+            }
             var userbook=_context.Users.FirstOrDefault(_ => _.Id == UserId);
+            if (userbook == null)
+            {
+                throw new Exception();
+            }
             buybook.UserId = UserId;
+            if (buybook.Count < 0) { throw new Exception(); }  
             buybook.Count--;
             buybook.RentBook++;
            userbook.BookCount++;
