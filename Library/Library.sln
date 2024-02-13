@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Migratoins", "Libra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.ResrtAPI", "Library.ResrtAPI\Library.ResrtAPI.csproj", "{05DA211B-FDE4-474C-9855-4FB7C5CEBB95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cantracts", "Cantracts\Cantracts.csproj", "{E5A8B971-BBBE-4A6C-8A56-658944231A0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{05DA211B-FDE4-474C-9855-4FB7C5CEBB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05DA211B-FDE4-474C-9855-4FB7C5CEBB95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05DA211B-FDE4-474C-9855-4FB7C5CEBB95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5A8B971-BBBE-4A6C-8A56-658944231A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5A8B971-BBBE-4A6C-8A56-658944231A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5A8B971-BBBE-4A6C-8A56-658944231A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5A8B971-BBBE-4A6C-8A56-658944231A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{77D26060-E67A-403B-930A-F22945C90DDA} = {D662795F-4FBB-4C4D-9B2E-B3375E12A22C}
 		{3B73C121-8B0B-41B9-ABC1-6174D8D4ABB1} = {D662795F-4FBB-4C4D-9B2E-B3375E12A22C}
 		{05DA211B-FDE4-474C-9855-4FB7C5CEBB95} = {90FFB4B0-8DA1-488C-94A6-8EC6E7943AC2}
+		{E5A8B971-BBBE-4A6C-8A56-658944231A0E} = {24F6B142-7A26-4679-BD3F-B66BB648A999}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBD3EF04-F9EE-4C59-BF61-67B4F828A59E}

@@ -75,3 +75,5 @@ C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Resrt
 C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.ResrtAPI\obj\Debug\net7.0\Library.ResrtAPI.pdb
 C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.ResrtAPI\obj\Debug\net7.0\Library.ResrtAPI.genruntimeconfig.cache
 C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.ResrtAPI\obj\Debug\net7.0\ref\Library.ResrtAPI.dll
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.ResrtAPI\bin\Debug\net7.0\Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.ResrtAPI\bin\Debug\net7.0\Cantracts.pdb

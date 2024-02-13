@@ -25,7 +25,6 @@ namespace Library.Persistence.EFBookReposittory
             }
             book.AuthorId = author.Id;
             _context.Books.Add(book);
-            _context.SaveChanges();
         }
     }
 }

@@ -18,8 +18,9 @@ namespace Library.Persistence.Users
         }
         public void AddUser(User user)
         {
+
             _context.Users.Add(user);
-            _context.SaveChanges();
+           
         }
     }
 }

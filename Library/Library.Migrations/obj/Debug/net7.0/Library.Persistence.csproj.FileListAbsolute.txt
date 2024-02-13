@@ -17,3 +17,5 @@ C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Migra
 C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Migrations\obj\Debug\net7.0\Library.Persistence.pdb
 C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Migrations\obj\Debug\net7.0\Library.Persistence.genruntimeconfig.cache
 C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Migrations\obj\Debug\net7.0\ref\Library.Persistence.dll
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Migrations\bin\Debug\net7.0\Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Migrations\bin\Debug\net7.0\Cantracts.pdb

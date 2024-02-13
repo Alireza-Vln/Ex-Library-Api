@@ -1,4 +1,5 @@
-﻿using Library.DTO;
+﻿using Cantracts;
+using Library.DTO;
 using Library.Entites;
 
 using Library.Services.Book.Cantract;
@@ -9,9 +10,11 @@ namespace Library.Services
 {
     public class BookAppService : BookService
     {
+        private readonly UnitOfWork _unitOfWork;
         private readonly BookRepository _repository;
-        public BookAppService(BookRepository repository)
+        public BookAppService(BookRepository repository,UnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
             _repository = repository;
         }
 
@@ -26,22 +29,11 @@ namespace Library.Services
                 
             };
             _repository.AddBook(book, i);
+          await _unitOfWork.Complete();
+
         }
 
-        //    var author = _context.Authors.FirstOrDefault(_ => _.Id == dto.AuthorId);
-
-        //    var book = new Book
-        //    {
-        //        Name = dto.Name,
-        //        Count = dto.Count,
-        //        AuthorId = author.Id,
-
-        //    };
-
-        //    _context.Books.Add(book);
-        //    _context.SaveChanges();
-        //    return book.Id;
-        //}
+     
         //public List<GetBooksDto> GetBook()
         //{
         //    return (from bo in _context.Set<Book>()

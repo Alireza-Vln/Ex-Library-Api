@@ -1,4 +1,5 @@
-﻿using Library.DTO;
+﻿using Cantracts;
+using Library.DTO;
 using Library.Entites;
 using Library.Services.User.Cantract;
 
@@ -6,9 +7,12 @@ namespace Library.Services
 {
     public class UserAppService : UserService
     {
+        readonly UnitOfWork _unitOfWork;
         readonly UserRepository _repository;
-        public UserAppService(UserRepository repository)
+        public UserAppService(UserRepository repository, UnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
+
             _repository = repository;
         }
 
@@ -20,24 +24,9 @@ namespace Library.Services
                 Name = dto.Name,
             };
             _repository.AddUser(user);
+           await _unitOfWork.Complete(); 
         }
-        //public readonly EfDataContext _context;
-        //public UserAppService()
-        //{
-        //        _context= new EfDataContext();
-        //}
-        //public int AddUser(AddUserDto dto)
-        //{
-        //    var user = new User
-        //    {
-        //        Name = dto.Name,
 
-        //    };
-        //    _context.Users.Add(user);
-        //    _context.SaveChanges();
-        //    return user.Id;
-
-        //}
         //public void RentBook(int BookId,int UserId)
         //{
         //    var buybook = _context.Books.FirstOrDefault(_ => _.Id == BookId);

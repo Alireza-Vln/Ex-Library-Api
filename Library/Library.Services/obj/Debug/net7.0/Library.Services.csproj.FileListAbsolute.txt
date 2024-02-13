@@ -13,3 +13,5 @@ C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Servi
 C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Services\obj\Debug\net7.0\refint\Library.Services.dll
 C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Services\obj\Debug\net7.0\Library.Services.pdb
 C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Services\obj\Debug\net7.0\ref\Library.Services.dll
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Services\bin\Debug\net7.0\Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Library.Services\bin\Debug\net7.0\Cantracts.pdb

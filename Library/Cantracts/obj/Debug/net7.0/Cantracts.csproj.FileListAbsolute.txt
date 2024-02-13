@@ -1,0 +1,11 @@
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\bin\Debug\net7.0\Cantracts.deps.json
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\bin\Debug\net7.0\Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\bin\Debug\net7.0\Cantracts.pdb
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\obj\Debug\net7.0\Cantracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\obj\Debug\net7.0\Cantracts.AssemblyInfoInputs.cache
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\obj\Debug\net7.0\Cantracts.AssemblyInfo.cs
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\obj\Debug\net7.0\Cantracts.csproj.CoreCompileInputs.cache
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\obj\Debug\net7.0\Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\obj\Debug\net7.0\refint\Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\obj\Debug\net7.0\Cantracts.pdb
+C:\Users\welldone\Desktop\Alireza\tesst-Api\Ex-Library-Api\Library\Cantracts\obj\Debug\net7.0\ref\Cantracts.dll

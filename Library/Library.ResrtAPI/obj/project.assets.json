@@ -1067,6 +1067,16 @@
           }
         }
       },
+      "Cantracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Cantracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cantracts.dll": {}
+        }
+      },
       "Library.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1081,6 +1091,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Cantracts": "1.0.0",
           "Library.Services": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.15"
         },
@@ -1095,6 +1106,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Cantracts": "1.0.0",
           "Library.Entities": "1.0.0"
         },
         "compile": {
@@ -3102,6 +3114,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Cantracts/1.0.0": {
+      "type": "project",
+      "path": "../Cantracts/Cantracts.csproj",
+      "msbuildProject": "../Cantracts/Cantracts.csproj"
     },
     "Library.Entities/1.0.0": {
       "type": "project",

@@ -1,5 +1,6 @@
 ﻿using Library.DTO;
 using Library.Services.Author.Cantract;
+using Library.Services.Authors.Cantract.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Library.ResrtAPI.Controllers.Author
@@ -13,10 +14,23 @@ namespace Library.ResrtAPI.Controllers.Author
         {
             _service = service;
         }
-        [HttpPost("Add-Aothur")]
+        [HttpPost("Add-Author")]
         public async Task AddAuthor([FromBody] AddAuthorDto dto) 
         {
             await _service.AddAuthor(dto);
         }
+        [HttpGet("Get-AllAuthor")]
+        public async Task<List<GetAuthorDto>> GetAllAuthor()
+        {
+            return await _service.GetAllAuthor();
+        }
+        [HttpDelete("Delete-Author")]
+        public async Task DeleteAuthor([FromQuery] int id)
+        {
+            _service.DeleteAuthor(id);
+        }
+        
+            
+
     }
 }

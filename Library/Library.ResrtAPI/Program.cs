@@ -1,4 +1,6 @@
+using Cantracts;
 using Library.EntityMaps;
+using Library.Persistence;
 using Library.Persistence.EFAuthorRepository;
 using Library.Persistence.EFBookReposittory;
 using Library.Persistence.EFCategoryRepository;
@@ -26,7 +28,7 @@ builder.Services.AddScoped<CategoryRepository,EFCategoryRepository>();
 builder.Services.AddScoped<CaregoryService,CategoryAppService>();
 builder.Services.AddScoped<UserRepository, EFUserRepository>();
 builder.Services.AddScoped<UserService,UserAppService>();
-
+builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
 
 
 

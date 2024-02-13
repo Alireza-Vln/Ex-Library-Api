@@ -1,4 +1,5 @@
 ﻿using Library.Entites;
+using Library.Services.Authors.Cantract.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace Library.Services.Author.Cantract
 {
     public interface AuthorRespository
     {
-        void AddAthour(Authors author);
+        void AddAuthor(Entites.Authors author);
+        List<GetAuthorDto> GetAllAuthor();
+        void DeleteAuthor(int id);
     }
 }

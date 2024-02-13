@@ -1,80 +1,42 @@
-﻿using Library.DTO;
+﻿using Cantracts;
+using Library.DTO;
 using Library.Entites;
 using Library.Services.Author.Cantract;
+using Library.Services.Authors.Cantract.Dtos;
 
 namespace Library.Services
 {
     public class AuthorAppService : AuthorService
     {
+        readonly UnitOfWork _unitOfWork;
         readonly AuthorRespository _respository;
-        public AuthorAppService(AuthorRespository respository)
+        public AuthorAppService(AuthorRespository respository,UnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
              _respository = respository;
         }
  
 
         public async Task AddAuthor(AddAuthorDto Dto)
         {
-            var athuor = new Authors
+            var athuor = new Entites.Authors
             {
                 Name = Dto.Name,
             };
-            _respository.AddAthour(athuor);
+           _respository.AddAuthor(athuor);
+            await _unitOfWork.Complete();
         }
 
+        public async Task DeleteAuthor(int id)
+        {
+            _respository.DeleteAuthor(id);
+          await _unitOfWork.Complete();
+        }
 
-
-
-
-
-
-
-
-
-
-        // public int AddAuthor(AddAuthorDto dto)
-        // {
-
-
-        //     var author = new Author
-        //     {
-
-        //         Name = dto.Name,
-
-        //     };
-
-
-        //     _context.Authors.Add(author);
-        //     _context.SaveChanges();
-        //     return author.Id;
-        // }
-
-        // public List<GetAothorDto> GetAuthor()
-        // {
-        //     return (from at in _context.Set<Author>()
-        //             join bo in _context.Books
-        //             on at.Id equals bo.UserId
-        //             into temp
-        //             from bo in temp.DefaultIfEmpty()
-
-        //             select new GetAothorDto
-        //             {
-        //                 AuthorName = at.Name,
-        //                 BookName = bo.Name,
-        //             } ).ToList();
-        // }
-        // public void DeletAuthor(int id) 
-        //{
-
-        //     var delete=_context.Authors.Where(_=>_.Id==id).First();
-        //     if (delete == null)
-        //     {
-        //         throw new Exception();
-        //     }
-        //     _context.Authors.Remove(delete);
-        //     _context.SaveChanges();
-
-        // }
+        public async Task<List<GetAuthorDto>> GetAllAuthor()
+        {
+            return  _respository.GetAllAuthor();
+        }
 
     }
 }

@@ -24,8 +24,8 @@ namespace Library.Persistence.EFCategoryRepository
                 throw new Exception("Not found");
             }
             category.BookId = book.Id;
-            _context.Books.Add(book);
-            _context.SaveChanges();
+            _context.Categories.Add(category);
+           
         }
     }
 }

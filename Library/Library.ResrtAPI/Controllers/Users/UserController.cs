@@ -16,7 +16,7 @@ namespace Library.ResrtAPI.Controllers.Users
         [HttpPost("AddUser")]
         public async Task AddUser(AddUserDto dto)
         {
-            _service.AddUser(dto);
+           await _service.AddUser(dto);
         }
     }
 }

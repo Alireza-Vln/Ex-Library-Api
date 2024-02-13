@@ -1054,6 +1054,16 @@
           }
         }
       },
+      "Cantracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Cantracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cantracts.dll": {}
+        }
+      },
       "Library.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1068,6 +1078,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Cantracts": "1.0.0",
           "Library.Entities": "1.0.0"
         },
         "compile": {
@@ -2899,6 +2910,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Cantracts/1.0.0": {
+      "type": "project",
+      "path": "../Cantracts/Cantracts.csproj",
+      "msbuildProject": "../Cantracts/Cantracts.csproj"
+    },
     "Library.Entities/1.0.0": {
       "type": "project",
       "path": "../Library.Entities/Library.Entities.csproj",
@@ -2912,6 +2928,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Cantracts >= 1.0.0",
       "Library.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.15"
@@ -2944,6 +2961,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\welldone\\Desktop\\Alireza\\tesst-Api\\Ex-Library-Api\\Library\\Cantracts\\Cantracts.csproj": {
+              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\tesst-Api\\Ex-Library-Api\\Library\\Cantracts\\Cantracts.csproj"
+            },
             "C:\\Users\\welldone\\Desktop\\Alireza\\tesst-Api\\Ex-Library-Api\\Library\\Library.Services\\Library.Services.csproj": {
               "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\tesst-Api\\Ex-Library-Api\\Library\\Library.Services\\Library.Services.csproj"
             }

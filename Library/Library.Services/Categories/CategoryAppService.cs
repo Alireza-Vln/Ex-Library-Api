@@ -1,4 +1,5 @@
-﻿using Library.DTO;
+﻿using Cantracts;
+using Library.DTO;
 using Library.Entites;
 using Library.Services.Categories.Cantract;
 
@@ -6,9 +7,11 @@ namespace Library.Services
 {
     public class CategoryAppService : CaregoryService
     {
+        readonly UnitOfWork _unitOfWork;
         readonly CategoryRepository _repository;
-        public CategoryAppService(CategoryRepository repository)
+        public CategoryAppService(CategoryRepository repository,UnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
             _repository = repository;
         }
         public async Task AddCategory(AddCategoryDto dto, int i)
@@ -18,7 +21,13 @@ namespace Library.Services
                 Name = dto.Name,
             };
             _repository.AddCategory(category, i);
+            await _unitOfWork.Complete();
         }
+
+
+
+
+
         //    public readonly EfDataContext _context;
         //    public CategoryAppService()
         //    {
