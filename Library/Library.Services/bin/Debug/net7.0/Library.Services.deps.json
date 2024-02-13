@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Library.Services/1.0.0": {
+        "dependencies": {
+          "Library.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Library.Services.dll": {}
+        }
+      },
+      "Library.Entities/1.0.0": {
+        "runtime": {
+          "Library.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Library.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Library.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
