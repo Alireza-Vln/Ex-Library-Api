@@ -10,5 +10,8 @@ namespace Library.Services.User.Cantract
     public interface UserService
     {
         public Task AddUser(AddUserDto dto);
+        public Task<List<GetUserDto>> GetAllUsers();
+        public Task RentBook(int BookId,int UserId);
+        public Task DeleteUser(int id);
     }
 }

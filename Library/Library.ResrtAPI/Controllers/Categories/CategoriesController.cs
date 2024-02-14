@@ -17,7 +17,12 @@ namespace Library.ResrtAPI.Controllers.Categories
         [HttpPost("Add-Category/{id}")]
         public async Task AddCategory(AddCategoryDto dto ,int id)
         {
-            await _service.AddCategory(dto, id);
+            _service.AddCategory(dto, id);
+        }
+        [HttpDelete("Delet-Category")]
+        public async Task DeleteCategory(int id)
+        {
+            _service.DeleteCategory(id);
         }
     }
 }

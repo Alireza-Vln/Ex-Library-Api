@@ -33,35 +33,17 @@ namespace Library.Services
 
         }
 
-     
-        //public List<GetBooksDto> GetBook()
-        //{
-        //    return (from bo in _context.Set<Book>()
-        //            join ath in _context.Authors
-        //            on bo.AuthorId equals ath.Id
-        //            into temp
-        //            from ath in temp.DefaultIfEmpty()
-        //            select new GetBooksDto
-        //            {
-        //                BookId = bo.Id,
-        //                Name = bo.Name,
-        //                Authorname = ath.Name,
-        //                Count = bo.Count,
-        //                RentBook = bo.RentBook,
+        public async Task DeleteBook(int id)
+        {
+           _repository.DeleteBook(id);
+          await _unitOfWork.Complete();
+        }
 
-        //            }).ToList();
+        public async Task<List<GetBooksDto>> GetAllBooks()
+        {
+            return _repository.GetAllBooks();
 
-        //}
-        //public void DeletBook(int id)
-        //{
-        //    var delete = _context.Books.Where(_ => _.Id == id).First();
-        //    if (delete == null)
-        //    {
-        //        throw new Exception();
-        //    }
-        //    _context.Books.Remove(delete);
-        //    _context.SaveChanges();
-        //}
+        }
 
     }
 }

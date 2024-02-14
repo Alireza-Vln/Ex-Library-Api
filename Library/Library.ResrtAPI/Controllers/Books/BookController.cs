@@ -14,10 +14,20 @@ namespace Library.ResrtAPI.Controllers.Books
             _service = service;
         }
 
-        [HttpPost("Add-Book")]
-        public async Task AddBook([FromBody]AddBookDto dto,[FromQuery]int id)
+        [HttpPost("Add-Book/{Id}")]
+        public async Task AddBook([FromBody]AddBookDto dto,[FromRoute]int id)
         {
            await _service.AddBook(dto, id);
+        }
+        [HttpGet("Get-AllBooks")]
+        public async Task<List<GetBooksDto>> GetAllBooks()
+        {
+            return await _service.GetAllBooks();
+        }
+        [HttpDelete("Delete-Book/{id}")]
+        public async Task DeleteBook([FromRoute] int id)
+        {
+           _service.DeleteBook(id);
         }
     }
 }

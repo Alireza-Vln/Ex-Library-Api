@@ -10,5 +10,6 @@ namespace Library.Services.Categories.Cantract
     public interface CaregoryService
     {
         public Task AddCategory(AddCategoryDto dto,int i);
+        public Task DeleteCategory(int id);
     }
 }

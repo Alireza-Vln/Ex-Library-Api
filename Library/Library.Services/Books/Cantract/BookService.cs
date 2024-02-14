@@ -10,5 +10,7 @@ namespace Library.Services.Book.Cantract
     public interface BookService
     {
         public Task AddBook(AddBookDto dto , int i);
+        public Task<List<GetBooksDto>> GetAllBooks();
+        public Task DeleteBook(int id);
     }
 }

@@ -18,5 +18,20 @@ namespace Library.ResrtAPI.Controllers.Users
         {
            await _service.AddUser(dto);
         }
+        [HttpGet("Get-AllUser")]
+        public async Task<List<GetUserDto>> GetAllUser()
+        {
+            return await _service.GetAllUsers();
+        }
+        [HttpPatch("RentBook")]
+        public async Task RentBook([FromQuery]int BookId, [FromQuery]int UserId)
+        {
+            await _service.RentBook(BookId, UserId);
+        }
+        [HttpDelete("Delet-User")]
+        public async void DeleteUser(int Id)
+        {
+            _service.DeleteUser(Id);
+        }
     }
 }

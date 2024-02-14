@@ -27,5 +27,16 @@ namespace Library.Persistence.EFCategoryRepository
             _context.Categories.Add(category);
            
         }
+
+        public void DeleteCategory(int id)
+        {
+            var category = _context.Categories.Where(_ => _.Id == id).FirstOrDefault();
+            if (category == null)
+            {
+                throw new Exception();
+            }
+            _context.Categories.Remove(category);
+           
+        }
     }
 }

@@ -9,5 +9,6 @@ namespace Library.Services.Categories.Cantract
     public interface CategoryRepository
     {
         void AddCategory(Entites.Category category,int i);
+        void DeleteCategory(int id); 
     }
 }

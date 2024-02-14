@@ -27,41 +27,25 @@ namespace Library.Services
            await _unitOfWork.Complete(); 
         }
 
-        //public void RentBook(int BookId,int UserId)
-        //{
-        //    var buybook = _context.Books.FirstOrDefault(_ => _.Id == BookId);
-        //    if (buybook == null)
-        //    {
-        //        throw new Exception();
-        //    }
-        //    var userbook=_context.Users.FirstOrDefault(_ => _.Id == UserId);
-        //    if (userbook == null)
-        //    {
-        //        throw new Exception();
-        //    }
-        //    buybook.UserId = UserId;
-        //    if (buybook.Count < 0) { throw new Exception(); }  
-        //    buybook.Count--;
-        //    buybook.RentBook++;
-        //   userbook.BookCount++;
-        //    _context.SaveChanges();
-        //}
-        //public List<GetUserDto> GetUsers()
-        //{
-        //   return( from us in _context.Set<User>()
-        //    join bo in _context.Books
-        //    on us.Id equals bo.UserId
-        //    into temp
-        //    from bo in temp.DefaultIfEmpty()
+        public async Task DeleteUser(int id)
+        {
+           _repository.DeleteUser(id);
+           await _unitOfWork.Complete();
+        }
 
-        //    select new GetUserDto
-        //    {
-        //        UserName = us.Name,
-        //        BookName =bo.Name,
-        //        CountBook=us.BookCount,
+        public async Task<List<GetUserDto>> GetAllUsers()
+        {
+          return _repository.GetAllUsers();
+            
+        }
 
-        //    }).ToList();
-        //}
+        public async Task RentBook(int BookId, int UserId)
+        {
+            _repository.RentBook(BookId, UserId);
+            await _unitOfWork.Complete();
+        }
+
+      
         //public void DeleteUser(int i)
         //{
         //    var user = _context.Users.Where(_=> _.Id == i).FirstOrDefault();
